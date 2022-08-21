@@ -1,0 +1,16 @@
+/*------------ 
+-----Fonts----
+------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    ;
+}
+
+.banner h1 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 76px;
+    color: orangered;
+}
