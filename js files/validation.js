@@ -1,4 +1,4 @@
-function handleOnclick() {
+function HandleOnClickCalculate() {
    const inputValue = document.getElementById('inputfield').value;
    if (inputValue === '') {
       return alert('Field is empty input valid digits');
