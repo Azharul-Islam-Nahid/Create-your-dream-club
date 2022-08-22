@@ -4,10 +4,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins&display=swap');
 
+/* Font style added in body */
+
 body {
     font-family: 'Poppins', sans-serif;
     ;
 }
+
+/* font style and color added for banner text */
 
 .banner h1 {
     font-family: 'Berkshire Swash', cursive;
