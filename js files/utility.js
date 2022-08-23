@@ -1,5 +1,10 @@
 
+
+// ----------------------------------------------------------
 // common function for disabling player select button onclick 
+// ----------------------------------------------------------
+
+
 
 function disable(button) {
     button.style.backgroundColor = 'white';
@@ -9,9 +14,9 @@ function disable(button) {
 
 
 
-
+// ---------------------------------------------------
 // function for adding player names below selected - V
-
+// ---------------------------------------------------
 
 
 
@@ -31,9 +36,12 @@ function addToList(player) {
 
     const div = document.getElementById('player-list');
 
+    // -------------------B-O-N-U-S------------------------
+    // Declared conditon for not adding more then 5 players
+    // ----------------------------------------------------
 
     if (playerArray.length > 5) {
-        alert('maximum player selected already');
+        alert('maximum player selected already!!!');
         playerArray.pop();
 
         return
