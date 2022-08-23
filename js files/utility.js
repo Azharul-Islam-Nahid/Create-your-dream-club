@@ -30,13 +30,18 @@ function addToList(player) {
 
 
     const div = document.getElementById('player-list');
-    div.innerHTML = '';
+
 
     if (playerArray.length > 5) {
-        return alert('maximum player selected already');
+        alert('maximum player selected already');
+        playerArray.pop();
+
+        return
+
     }
 
-    else
+    else {
+        div.innerHTML = '';
         for (let i = 0; i < playerArray.length; i++) {
 
             const name = playerArray[i].playerName;
@@ -45,12 +50,14 @@ function addToList(player) {
 
             tr.innerHTML = `
         <tr class="justify-content-end">
-        <th>${i + 1.}</th>
+        <th>${i + 1}</th>
         <td>${name}</td>
         </tr>`
                 ;
+
             div.appendChild(tr)
 
         }
-
+    }
+    return
 }
